@@ -10,6 +10,8 @@ even on minor releases, e.g. `v0.7.5` -> `v0.7.6`.
 
 ## unreleased
 
+*   support recording H.265 (#3) and MJPEG video. Browser support may vary.
+*   bump minimum Rust version to 1.79.
 *   in UI's list view, add a tooltip on the end time which shows why the
     recording ended.
 

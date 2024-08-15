@@ -5,7 +5,7 @@ authors = ["Scott Lamb <slamb@slamb.org>"]
 edition = "2021"
 resolver = "2"
 license-file = "../LICENSE.txt"
-rust-version = "1.70"
+rust-version = "1.79"
 publish = false
 
 [features]
@@ -24,7 +24,8 @@ members = ["base", "db"]
 
 [workspace.dependencies]
 base64 = "0.21.0"
-h264-reader = "0.7.0"
+#h264-reader = "0.7.0"
+h264-reader = { git = "https://github.com/scottlamb/h264-reader", rev = "35968d5ca67f317fd35c1e344adb8ae14ee2efd6" }
 itertools = "0.12.0"
 nix = "0.27.0"
 pretty-hex = "0.4.0"
@@ -58,7 +59,8 @@ password-hash = "0.5.0"
 pretty-hex = { workspace = true }
 protobuf = "3.0"
 reffers = "0.7.0"
-retina = "0.4.0"
+#retina = "0.4.0"
+retina = { git = "https://github.com/scottlamb/retina", rev = "27a4ebf286945ecf3f1863a24f0cc568cd50bdb8", features = ["unstable-sample-entry", "unstable-h265"] }
 ring = { workspace = true }
 rusqlite = { workspace = true }
 serde = { version = "1.0", features = ["derive"] }
