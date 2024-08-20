@@ -17,6 +17,7 @@ even on minor releases, e.g. `v0.7.5` -> `v0.7.6`.
     recording ended.
 *   fix [#121](https://github.com/scottlamb/moonfire-nvr/issues/121):
     iPhone live view.
+*   use `jiff` for time manipulations.
 
 ## v0.7.16 (2024-05-30)
 

@@ -41,7 +41,7 @@ impl Service {
         let r = extract_json_body(&mut req).await?;
         let r: json::PostSignalsRequest = parse_json_body(&r)?;
         require_csrf_if_session(&caller, r.csrf)?;
-        let now = recording::Time::new(self.db.clocks().realtime());
+        let now = recording::Time::from(self.db.clocks().realtime());
         let mut l = self.db.lock();
         let start = match r.start {
             json::PostSignalsTimeBase::Epoch(t) => t,

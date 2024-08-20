@@ -26,6 +26,7 @@ members = ["base", "db"]
 base64 = "0.21.0"
 h264-reader = "0.7.0"
 itertools = "0.12.0"
+jiff = "0.1.8"
 nix = "0.27.0"
 pretty-hex = "0.4.0"
 ring = "0.17.0"
@@ -51,6 +52,7 @@ http = "0.2.3"
 http-serve = { version = "0.3.1", features = ["dir"] }
 hyper = { version = "0.14.2", features = ["http1", "server", "stream", "tcp"] }
 itertools = { workspace = true }
+jiff = { workspace = true, features = ["tz-system"] }
 libc = "0.2"
 log = { version = "0.4" }
 memchr = "2.0.2"
@@ -60,14 +62,14 @@ password-hash = "0.5.0"
 pretty-hex = { workspace = true }
 protobuf = "3.0"
 reffers = "0.7.0"
-retina = "0.4.9"
+#retina = "0.4.9"
+retina = { git = "https://github.com/scottlamb/retina.git", rev = "6d5ccd156a503b7f83427e4871f1ada887e485f1" }
 ring = { workspace = true }
 rusqlite = { workspace = true }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 smallvec = { version = "1.7", features = ["union"] }
 sync_wrapper = "0.1.0"
-time = "0.1"
 tokio = { version = "1.24", features = ["macros", "rt-multi-thread", "signal", "sync", "time"] }
 tokio-tungstenite = "0.20.0"
 toml = "0.8"
